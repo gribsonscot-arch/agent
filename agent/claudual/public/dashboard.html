@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudual Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <header>
+            <div class="logo">Claudual</div>
+            <nav>
+                <a href="/">Chat</a>
+                <a href="/dashboard" class="active">Dashboard</a>
+            </nav>
+        </header>
+        
+        <main class="dashboard-grid">
+            <section class="card profile-card">
+                <h2>User Profile</h2>
+                <div id="user-preferences">Loading preferences...</div>
+            </section>
+            
+            <section class="card wiki-card">
+                <h2>LLM Wiki Status</h2>
+                <div id="wiki-summary">Loading wiki status...</div>
+                <div class="ingest-form">
+                    <h3>Ingest New Source</h3>
+                    <input type="text" id="source-name" placeholder="Source Name">
+                    <textarea id="source-content" placeholder="Paste source content here..."></textarea>
+                    <button id="ingest-btn">Ingest</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudual - Personal AI Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <header>
+            <div class="logo">Claudual</div>
+            <nav>
+                <a href="/" class="active">Chat</a>
+                <a href="/dashboard">Dashboard</a>
+            </nav>
+        </header>
+        
+        <main id="chat-window">
+            <div id="messages"></div>
+        </main>
+        
+        <footer>
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Ask Claudual anything..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
